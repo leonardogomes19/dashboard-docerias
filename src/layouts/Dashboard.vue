@@ -7,12 +7,12 @@
             <h3 class="opacity-50 uppercase font-semibold tracking-wider mb-3 text-xs">Menu</h3>
 
             <div class="space-y-6">
-                <MenuItem :icon="HomeIcon">Discover</MenuItem>
-                <MenuItem :icon="TrendingUpIcon">Trending</MenuItem>
-                <MenuItem :icon="TrendingUpIcon">Trending</MenuItem>
-                <MenuItem :icon="TrendingUpIcon">Trending</MenuItem>
-                <MenuItem :icon="TrendingUpIcon">Trending</MenuItem>
-                <MenuItem :icon="TrendingUpIcon">Trending</MenuItem>
+                <MenuItems :icon="HomeIcon">Discover</MenuItems>
+                <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
+                <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
+                <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
+                <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
+                <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
             </div>
         </nav>
     </div>
@@ -43,7 +43,7 @@ import HomeIcon from '../components/icons/HomeIcon.vue'
 import TrendingUpIcon from '../components/icons/TrendingUpIcon.vue'
 import ChevronDownIcon from '../components/icons/ChevronDownIcon.vue'
 import BellIcon from '../components/icons/BellIcon.vue'
-import MenuItem from './navs/MenuItem.vue'
+import MenuItems from './navs/MenuItem.vue'
 import InputSearch from '../components/inputs/InputSearch.vue'
 import Avatar from '../components/Avatar.vue'
 
@@ -53,7 +53,7 @@ export default {
         TrendingUpIcon,
         ChevronDownIcon,
         BellIcon,
-        MenuItem,
+        MenuItems,
         InputSearch,
         Avatar
     },

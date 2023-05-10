@@ -11,14 +11,20 @@
 </template>
 
 <script>
-import HomeIcon from "../../components/icons/HomeIcon.vue";
-import { defineProps } from "vue";
+import { defineProps } from 'vue';
+
+import HomeIcon from '../../components/icons/HomeIcon.vue';
+
 export default {
-  components() {
+  components: {
     HomeIcon,
-      defineProps({
-        icon: { default: null },
-      });
+  },
+
+  props: {
+    icon: {
+      type: Object,
+      default: () => HomeIcon,
+    },
   },
 };
 </script>
