@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-800 flex text-white max-h-screen h-screen">
-    <div class="w-64">
-      <span class="font-semibold p-6 block opacity-90">skateboard</span>
+  <div class="bg-white flex text-white max-h-screen h-screen">
+    <div class="bg-purple-900 w-64">
+      <span class="font-semibold p-6 block opacity-90">Dashboard Docerias</span>
 
       <nav class="p-6">
         <h3
@@ -11,12 +11,9 @@
         </h3>
 
         <div class="space-y-6">
-          <MenuItems :icon="HomeIcon">Discover</MenuItems>
-          <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
-          <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
-          <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
-          <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
-          <MenuItems :icon="TrendingUpIcon">Trending</MenuItems>
+          <MenuItems :icon="HomeIcon">Descubra</MenuItems>
+          <MenuItems :icon="TrendingUpIcon">Em alta</MenuItems>
+          <MenuItems :icon="TrendingUpIcon">Mais vendidos</MenuItems>
         </div>
       </nav>
     </div>
@@ -41,51 +38,51 @@
         </div>
       </header>
 
-      <h1 class="font-bold text-4xl mt-6 mb-4">Discover</h1>
+      <h1 class="font-bold text-4xl ml-5 mt-6 mb-4 text-black">Destaques</h1>
 
       <div class="px-5 pb-5 content">
         <div class="grid gap-4 grid-cols-12">
           <div class="col-span-8 h-96 rounded-3xl overflow-hidden relative">
             <div class="flex w-full h-full">
               <img
-                src="https://via.placeholder.com/2000x1400"
+                src="/imagens/cake.jpg"
                 class="w-full object-cover"
               />
             </div>
             <div class="z-10 absolute top-0 p-6 w-full bottom-0">
               <h3 class="text-2xl max-w-xs">
-                How to do Basic Jumping and how to landing safely
+                Cake
               </h3>
 
               <div
                 class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-white"
               >
-                7 minutes
+                R$50.00
               </div>
             </div>
           </div>
           <div class="col-span-4 h-96 rounded-3xl overflow-hidden relative">
             <div class="flex w-full h-full">
               <img
-                src="https://via.placeholder.com/2000x1400"
+                src="/imagens/pao-de-mel.jpg"
                 class="w-full object-cover"
               />
             </div>
             <div class="z-10 absolute top-0 p-6 w-full bottom-0">
               <h3 class="text-2xl max-w-xs">
-                How to do Basic Jumping and how to landing safely
+                Pão de Mel
               </h3>
 
               <div
                 class="absolute right-6 bottom-6 px-2 py-1 rounded-lg bg-gray-800 bg-opacity-50 text-white"
               >
-                7 minutes
+                R$10.00
               </div>
             </div>
           </div>
         </div>
 
-        <h1 class="text-2xl mt-6 mb-4">Most Watched</h1>
+        <h1 class="text-2xl mt-6 mb-4 text-black">Mais vistos</h1>
         <div class="grid grid-cols-4 gap-4">
           <CardItem v-for="(n, index) of 10" :key="index" />
         </div>
